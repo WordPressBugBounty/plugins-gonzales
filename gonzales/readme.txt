@@ -1,16 +1,18 @@
-=== Wordpress Assets manager, dequeue scripts, dequeue styles ===
+=== Assets manager, dequeue scripts, dequeue styles for WordPress===
 Tags: dequeue script, dequeue style, pagespeed, speed, unload style, gonzales, assets clean, assets, assets cleanup, page speed optimizer, perfmatters, disable script, disable style, disable jquery, disable jquery-migrate, disable fonts
-Contributors: webcraftic, creativemotion, alexkovalevv
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VDX7JNTQPNPFW
+Contributors: themeisle
 Requires at least: 5.6
-Tested up to: 6.7
+Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: trunk
+Stable tag: 2.2.1
 License: GPLv2
 
 Increase the speed of the pages by disabling unused scripts (.JS) and styles (.CSS). Make your website REACTIVE!
 
 == Description ==
+**Assets Manager is no longer under active development. We recommend using [Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/) as it includes all Assets Manager features plus powerful caching capabilities.**
+
+In October 2025, Assets Manager was acquired by Super Page Cache. We're retiring Assets Manager in favor of Super Page Cache to ensure users have access to the same asset optimization features they're using now, plus additional caching capabilities for improved performance, compatibility, and a superior user experience.
 
 You should know that, a lot of WordPress plugins developers forget performance when creating plugins. This means that a lot of them load self scripts/styles on every single post and or page of your site. This is not good, because it slows your site down.
 
@@ -36,18 +38,6 @@ We used some useful functions from plugins <strong>Asset Queue Manager</strong>,
 
 If you want to help with the translation, please contact me through this site or through the contacts inside the plugin.
 
-#### Recommended separate modules ####
-
-We invite you to check out a few other related free plugins that our team has also produced that you may find especially useful:
-
-* [Clearfy – WordPress optimization plugin and disable ultimate tweaker](https://wordpress.org/plugins/clearfy/)
-* [Disable Comments for Any Post Types (Remove Comments)](https://wordpress.org/plugins/comments-plus/)
-* [Cyrlitera – transliteration of links and file names](https://wordpress.org/plugins/cyrlitera/)
-* [Cyr-to-lat reloaded – transliteration of links and file names](https://wordpress.org/plugins/cyr-and-lat/ "Cyr-to-lat reloaded")
-* [Disable admin notices individually](https://wordpress.org/plugins/disable-admin-notices/ "Disable admin notices individually")
-* [Hide login page](https://wordpress.org/plugins/hide-login-page/ "Hide login page")
-* [Disable updates, Disable automatic updates, Updates manager](https://wordpress.org/plugins/webcraftic-updates-manager/)
-
 == Installation ==
 
 1. Upload the plugin folder to the `/wp-content/plugins/` directory
@@ -59,6 +49,21 @@ We invite you to check out a few other related free plugins that our team has al
 2. Assets manager
 
 == Changelog ==
+
+#####   Version 2.2.1 (2026-01-13)
+
+- Enhanced security and updated dependencies
+- Updated newsletter
+
+
+
+
+####   Version 2.2.0 (2025-10-20)
+
+- Assets Manager was acquired by [Super Page Cache](https://wordpress.org/plugins/wp-cloudflare-page-cache/)
+- Were retiring Assets Manager in favor of Super Page Cache to ensure users have access to the same asset optimization features theyre using now, plus additional caching capabilities for improved performance, compatibility, and a superior user experience.
+
+
 = 2.1.9 (05.12.2024) =
 * Added: Compatibility with Wordpress 6.7
 

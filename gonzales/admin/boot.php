@@ -201,11 +201,30 @@ if( defined('LOADING_ASSETS_MANAGER_AS_ADDON') ) {
 	function wbcr_gnz_rating_widget_url($page_url, $plugin_name)
 	{
 		if( !defined('LOADING_ASSETS_MANAGER_AS_ADDON') && ($plugin_name == WGZ_Plugin::app()->getPluginName()) ) {
-			return 'https://goo.gl/zyNV6z';
+			return 'https://wordpress.org/support/plugin/gonzales/reviews/';
 		}
 
 		return $page_url;
 	}
 
 	add_filter('wbcr_factory_pages_480_imppage_rating_widget_url', 'wbcr_gnz_rating_widget_url', 10, 2);
+
+	/**
+	 * Initialize Assets Manager Farewell notice system
+	 */
+	add_action('admin_init', function() {
+		if ( ! class_exists('WGZ_Farewell') ) {
+			require_once WGZ_PLUGIN_DIR . '/admin/includes/class.farewell.php';
+		}
+		new WGZ_Farewell();
+	});
+
+	/**
+	 * Load farewell notice styles on dashboard
+	 */
+	add_action('admin_enqueue_scripts', function($hook) {
+		if ( 'index.php' === $hook || $hook === 'settings_page_assets-manager-wbcr_gonzales' ) {
+			wp_enqueue_style('wgz-farewell-notice', WGZ_PLUGIN_URL . '/admin/assets/css/farewell-notice.css', [], WGZ_PLUGIN_VERSION);
+		}
+	});
 }

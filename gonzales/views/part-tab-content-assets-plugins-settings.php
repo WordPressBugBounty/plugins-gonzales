@@ -11,7 +11,7 @@ $plugin_name = $data['name'];
 ?>
 <div class="wam-plugin-settings">
 	<div class="wam-plugin-settings__controls">
-		<select class="wam-select<?php echo $data['select_control_classes']; ?> js-wam-select-plugin-load-mode" data-plugin-name="<?php echo esc_attr($plugin_name) ?>">
+		<select class="wam-select<?php echo esc_attr($data['select_control_classes']); ?> js-wam-select-plugin-load-mode" data-plugin-name="<?php echo esc_attr($plugin_name) ?>">
 			<option value="enable"<?php selected('enable', $data['load_mode']) ?>>
 				<?php _e("Load plugin and its assets", 'gonzales') ?>
 			</option>
@@ -41,9 +41,9 @@ $plugin_name = $data['name'];
 		<?php if( !empty($data['assets']) ): ?>
 			<?php foreach((array)$data['assets'] as $resource_type => $assets): ?>
 				<?php foreach((array)$assets as $resource_handle => $item): ?>
-					<tr data-size="<?php echo esc_attr($item['size']); ?>" data-resource-type="<?php echo esc_attr($resource_type) ?>" data-resource-handle="<?php echo esc_attr($resource_handle) ?>" data-asset-handle="<?php echo esc_attr($resource_handle . '-' . $resource_type); ?>" class="js-wam-asset js-wam-<?php echo esc_attr($resource_type); ?>-asset wam-table__asset-settings<?php echo $item['row_classes']; ?>" id="wam-table__loaded-resourse-<?php echo md5($resource_handle . $resource_type . $item['url_full']); ?>">
+					<tr data-size="<?php echo esc_attr($item['size']); ?>" data-resource-type="<?php echo esc_attr($resource_type) ?>" data-resource-handle="<?php echo esc_attr($resource_handle) ?>" data-asset-handle="<?php echo esc_attr($resource_handle . '-' . $resource_type); ?>" class="js-wam-asset js-wam-<?php echo esc_attr($resource_type); ?>-asset wam-table__asset-settings<?php echo esc_attr($item['row_classes']); ?>" id="wam-table__loaded-resourse-<?php echo md5($resource_handle . $resource_type . $item['url_full']); ?>">
 						<td class="wam-table__td-actions">
-							<select class="wam-select<?php echo $item['select_control_classes']; ?> js-wam-select-asset-load-mode"<?php disabled('enable' !== $data['load_mode']) ?>>
+							<select class="wam-select<?php echo esc_attr($item['select_control_classes']); ?> js-wam-select-asset-load-mode"<?php disabled('enable' !== $data['load_mode']) ?>>
 								<option value="enable"<?php selected('enable', $item['load_mode']) ?>>
 									<?php _e('Enable', 'gonzales') ?>
 								</option>
@@ -68,13 +68,13 @@ $plugin_name = $data['name'];
 								<?php if( !empty($item['deps']) ): ?>
 									<span class="wam-colors--grey"><?php _e('Dependency by', 'gonzales') ?></span>:
 									<span class="wam-table__asset-deps js-wam-table__asset-deps">
-                                        <?php echo implode(', ', $item['deps']); ?>
+                                        <?php echo esc_html( implode(', ', $item['deps']) ); ?>
                                     </span><br>
 								<?php endif; ?>
 								<?php if( !empty($item['requires']) ): ?>
 									<span class="wam-colors--red"><?php _e('Requires for', 'gonzales') ?></span>:
 									<span class="wam-table__asset-requires js-wam-table__asset-requires">
-                                        <?php echo implode(', ', $item['requires']); ?>
+                                        <?php echo esc_html( implode(', ', $item['requires']) ); ?>
                                     </span>
 								<?php endif; ?>
 							</div>

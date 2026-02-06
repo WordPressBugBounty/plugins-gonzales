@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'WGZ_PLUGIN_ACTIVE' ) ) {
-	define( 'WGZ_PLUGIN_VERSION', '2.1.9' );
+	define( 'WGZ_PLUGIN_VERSION', '2.2.1' );
 	define( 'WGZ_TEXT_DOMAIN', 'gonzales' );
 	define( 'WGZ_PLUGIN_ACTIVE', true );
 
@@ -42,7 +42,7 @@ if ( ! defined( 'WGZ_PLUGIN_ACTIVE' ) ) {
 		new WGZ_Plugin();
 	} catch( Exception $e ) {
 		$wgnz_plugin_error_func = function () use ( $e ) {
-			$error = sprintf( "The %s plugin has stopped. <b>Error:</b> %s Code: %s", 'Webcraftic Assets Manager', $e->getMessage(), $e->getCode() );
+			$error = sprintf( "The %s plugin has stopped. <b>Error:</b> %s Code: %s", 'Assets Manager', $e->getMessage(), $e->getCode() );
 			echo '<div class="notice notice-error"><p>' . $error . '</p></div>';
 		};
 

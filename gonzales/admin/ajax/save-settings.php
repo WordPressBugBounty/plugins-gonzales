@@ -105,5 +105,5 @@ function wam_save_settings_action()
 	]);
 }
 
-add_action('wp_ajax_nopriv_wam-save-settings', 'wam_save_settings_action');
+// Only allow authenticated users with proper capabilities to save settings
 add_action('wp_ajax_wam-save-settings', 'wam_save_settings_action');

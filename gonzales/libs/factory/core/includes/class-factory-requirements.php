@@ -140,6 +140,15 @@ if ( ! class_exists( 'Wbcr_Factory480_Requirements' ) ) {
 			}
 
 			add_action( 'admin_init', array( $this, 'register_notices' ) );
+
+			add_action( 'init', array( $this, 'register_plugin_title' ) );
+		}
+
+		/**
+		 * Register plugin title.
+		 */
+		public function register_plugin_title() {
+			$this->plugin_title = __( 'Assets manager', 'gonzales' );
 		}
 
 		public function get_plugin_version() {

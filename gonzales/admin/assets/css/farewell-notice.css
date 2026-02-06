@@ -1,0 +1,157 @@
+/* Assets Manager Farewell Notice Styles */
+
+#try-super-page-cache-panel {
+	display: none;
+}
+
+.try-super-page-cache-panel {
+	position: relative;
+	overflow: auto;
+	margin: 16px 0;
+	padding: 23px 10px 0;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
+	background: #fff;
+	font-size: 13px;
+	line-height: 2.1em;
+}
+
+.try-super-page-cache-panel h2 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+.try-super-page-cache-panel h3 {
+	margin: 17px 0 0;
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+.try-super-page-cache-panel li {
+	font-size: 14px;
+}
+
+.try-super-page-cache-panel p {
+	color: #72777c;
+}
+
+.try-super-page-cache-action a {
+	text-decoration: none;
+}
+
+.try-super-page-cache-panel .about-description {
+	font-size: 16px;
+	margin: 0;
+}
+
+.try-super-page-cache-panel-content hr {
+	margin: 20px -23px 0 -23px;
+	border-top: 1px solid #f3f4f5;
+	border-bottom: none;
+}
+
+.try-super-page-cache-panel .try-super-page-cache-panel-close {
+	position: absolute;
+	z-index: 10;
+	top: 10px;
+	right: 10px;
+	padding: 10px 15px 10px 21px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+
+.try-super-page-cache-panel .try-super-page-cache-panel-close:before {
+	background: none;
+	color: #72777c;
+	content: "\f153";
+	display: block;
+	font: normal 16px/20px dashicons;
+	speak: none;
+	height: 20px;
+	text-align: center;
+	width: 20px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	top: 8px;
+	left: 0;
+	transition: all .1s ease-in-out;
+}
+
+.try-super-page-cache-panel-content {
+	margin: 0 13px;
+	max-width: 1500px;
+}
+
+.try-super-page-cache-panel img {
+	margin-top: 23px;
+	width: calc( 100% - 40px );
+	border: 1px solid #f3f4f5;
+}
+
+.try-super-page-cache-panel .try-super-page-cache-panel-column > * {
+	padding-right: 40px;
+}
+
+.try-super-page-cache-panel .try-super-page-cache-panel-column-container {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 36% 32% 32%;
+	grid-template-columns: 36% 32% 32%;
+	margin-bottom: 13px;
+}
+
+.try-super-page-cache-panel .try-super-page-cache-panel-column:not(.try-super-page-cache-panel-image-column) {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: auto 100px;
+	grid-template-rows: auto 100px;
+}
+
+.try-super-page-cache-panel-column p {
+	margin-top: 7px;
+	color: #444;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 1024px) {
+	.try-super-page-cache-panel .try-super-page-cache-panel-column-container {
+		-ms-grid-columns: 50% 50%;
+		grid-template-columns: 50% 50%;
+	}
+
+	.try-super-page-cache-panel .try-super-page-cache-panel-image-column {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	.try-super-page-cache-panel .try-super-page-cache-panel-column-container {
+		-ms-grid-columns: 100%;
+		grid-template-columns: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.try-super-page-cache-panel .try-super-page-cache-panel-close {
+		overflow: hidden;
+		text-indent: 40px;
+		white-space: nowrap;
+		width: 20px;
+		height: 20px;
+		padding: 5px;
+		top: 5px;
+		right: 5px;
+	}
+
+	.try-super-page-cache-panel .try-super-page-cache-panel-close:before {
+		font-size: 20px;
+		top: 5px;
+		left: -35px;
+	}
+}
+

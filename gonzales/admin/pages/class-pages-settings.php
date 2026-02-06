@@ -103,7 +103,7 @@ class WGZ_AssetsManagerPage extends WBCR\Factory_Templates_134\Pages\PageBase {
 			'way' => 'buttons',
 			'name' => 'disable_assets_manager',
 			'title' => __('Disable assets manager', 'gonzales'),
-			'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'grey'],
+			'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'green'],
 			'hint' => __('Full disable of the module.', 'gonzales'),
 			'eventsOn' => [
 				'hide' => '#wbcr-gnz-asset-manager-extend-options'
@@ -136,7 +136,7 @@ class WGZ_AssetsManagerPage extends WBCR\Factory_Templates_134\Pages\PageBase {
 					'way' => 'buttons',
 					'name' => 'disable_assets_manager_on_front',
 					'title' => __('Disable assets manager on front', 'gonzales'),
-					'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'grey'],
+					'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'green'],
 					'hint' => __('Disables assets manager initialization for frontend.', 'gonzales'),
 					'default' => false
 				],
@@ -145,7 +145,7 @@ class WGZ_AssetsManagerPage extends WBCR\Factory_Templates_134\Pages\PageBase {
 					'way' => 'buttons',
 					'name' => 'disable_assets_manager_on_backend',
 					'title' => __('Disable assets manager on back-end', 'gonzales'),
-					'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'grey'],
+					'layout' => ['hint-type' => 'icon', 'hint-icon-color' => 'green'],
 					'hint' => __('Disables assets manager initialization for backend.', 'gonzales'),
 					'default' => true
 				]

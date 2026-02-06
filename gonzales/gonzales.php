@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: Webcraftic Assets manager
+ * Plugin Name: Assets manager for WordPress
  * Plugin URI: https://wordpress.org/plugins/gonzales/
  * Description: Increase the speed of the pages by disabling unused scripts (.JS) and styles (.CSS). Make your website REACTIVE!
- * Author: Webcraftic <wordpress.webraftic@gmail.com>
- * Version: 2.1.9
+ * Author: Webcraftic <contact@cm-wp.com>
+ * Version: 2.2.1
  * Text Domain: gonzales
  * Domain Path: /languages/
- * Author URI: https://webcraftic.com
+ * Author URI: https://cm-wp.com
  * Framework Version: FACTORY_480_VERSION
  */
 
@@ -15,19 +15,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
-/**
- * Developers who contributions in the development plugin:
- *
- * Alexander Kovalev
- * ---------------------------------------------------------------------------------
- * Full plugin development.
- *
- * Email:         alex.kovalevv@gmail.com
- * Personal card: https://alexkovalevv.github.io
- * Personal repo: https://github.com/alexkovalevv
- * ---------------------------------------------------------------------------------
- */
 
 /**
  * -----------------------------------------------------------------------------
@@ -43,7 +30,7 @@ require_once( dirname( __FILE__ ) . '/libs/factory/core/includes/class-factory-r
 $wgnz_plugin_info = [
 	'prefix'               => 'wbcr_gnz_',
 	'plugin_name'          => 'wbcr_gonzales',
-	'plugin_title'         => 'Webcraftic assets manager',
+	'plugin_title'         => 'Assets manager',
 
 	// PLUGIN SUPPORT
 	'support_details'      => [
@@ -128,7 +115,7 @@ try {
 	define( 'WGZ_PLUGIN_THROW_ERROR', true );
 
 	$wgnz_plugin_error_func = function () use ( $e ) {
-		$error = sprintf( "The %s plugin has stopped. <b>Error:</b> %s Code: %s", 'Webcraftic Assets Manager', $e->getMessage(), $e->getCode() );
+		$error = sprintf( "The %s plugin has stopped. <b>Error:</b> %s Code: %s", 'Assets Manager', $e->getMessage(), $e->getCode() );
 		echo '<div class="notice notice-error"><p>' . $error . '</p></div>';
 	};
 

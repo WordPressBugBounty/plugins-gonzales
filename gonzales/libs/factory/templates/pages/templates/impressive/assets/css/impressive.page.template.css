@@ -389,12 +389,20 @@
 }
 #WBCR .wbcr-factory-templates-134-impressive-page-template .wbcr-factory-sidebar-widget {
   display: inline-block;
-  min-height: 230px;
   width: 100%;
   margin-top: 20px;
   background-color: #fff;
   padding: 20px 15px;
   vertical-align: top;
+}
+#WBCR .wbcr-factory-templates-134-impressive-page-template i.dashicons {
+  font-size: 17px;
+}
+#WBCR .wbcr-factory-templates-134-impressive-page-template i.dashicons.dashicons-star-filled {
+  color: #FF9529;
+}
+#WBCR .wbcr-factory-templates-134-impressive-page-template .wbcr-leave-review-link {
+  text-decoration: none;
 }
 #WBCR .wbcr-factory-templates-134-impressive-page-template .wbcr-factory-sidebar-widget.wbcr-factory-hide {
   display: none;
