@@ -1,0 +1,18 @@
+{
+  "name": "codeinwp/assets-manager",
+  "authors": [
+    {
+      "name": "ThemeIsle Team",
+      "email": "friends@themeisle.com",
+      "homepage": "https://themeisle.com"
+    }
+  ],
+   "autoload": {
+      "files": [
+        "vendor/codeinwp/themeisle-sdk/load.php"
+      ]
+    },
+  "require": {
+    "codeinwp/themeisle-sdk": "^3.3"
+  }
+}

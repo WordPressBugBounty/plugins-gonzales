@@ -4,7 +4,7 @@ Contributors: themeisle
 Requires at least: 5.6
 Tested up to: 6.9
 Requires PHP: 7.2
-Stable tag: 2.2.1
+Stable tag: 2.2.2
 License: GPLv2
 
 Increase the speed of the pages by disabling unused scripts (.JS) and styles (.CSS). Make your website REACTIVE!
@@ -48,7 +48,20 @@ If you want to help with the translation, please contact me through this site or
 1. Control panel
 2. Assets manager
 
+== Frequently Asked Questions ==
+
+= How to report a security issue? =
+ 
+Plugin security is a core priority for us. If you identify a potential vulnerability, we ask that you disclose it responsibly.
+
 == Changelog ==
+
+#####   Version 2.2.2 (2026-05-15)
+
+- Updated dependencies
+
+
+
 
 #####   Version 2.2.1 (2026-01-13)
 
