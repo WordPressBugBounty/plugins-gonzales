@@ -1,3 +1,8 @@
+#####   Version 2.2.4 (2026-10-20)
+
+- Removed the promotional advertisement banners, dashboard widget, and admin notices that relied on a discontinued external service.
+- Updated dependencies
+
 #####   Version 2.2.3 (2026-05-25)
 
 - Updated dependencies

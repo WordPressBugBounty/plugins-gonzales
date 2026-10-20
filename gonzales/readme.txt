@@ -4,7 +4,7 @@ Contributors: themeisle
 Requires at least: 5.6
 Tested up to: 7.1
 Requires PHP: 7.2
-Stable tag: 2.2.3
+Stable tag: 2.2.4
 License: GPLv2
 
 Increase the speed of the pages by disabling unused scripts (.JS) and styles (.CSS). Make your website REACTIVE!
@@ -55,6 +55,14 @@ If you want to help with the translation, please contact me through this site or
 Plugin security is a core priority for us. If you identify a potential vulnerability, we ask that you disclose it responsibly.
 
 == Changelog ==
+
+#####   Version 2.2.4 (2026-10-20)
+
+- Removed the promotional advertisement banners, dashboard widget, and admin notices that relied on a discontinued external service.
+- Updated dependencies
+
+
+
 
 #####   Version 2.2.3 (2026-05-25)
 
